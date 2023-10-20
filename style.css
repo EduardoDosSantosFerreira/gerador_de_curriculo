@@ -1,0 +1,79 @@
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* Estilizando o formulário */
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Centralizando o formulário */
+  form {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  /* Estilizando os títulos das seções */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Estilizando os campos de entrada e seleção */
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilizando os checkboxes */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Estilizando o botão de envio */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilizando a descrição das atividades */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilizando os campos de entrada de número */
+  input[type="number"] {
+    width: 60px;
+  }
+  

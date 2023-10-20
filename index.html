@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Currículo</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <h1>Formulário de Currículo</h1>
+    <form action="processar.php" method="post">
+        <h2>Dados pessoais</h2>
+        Nome: <input type="text" name="nome" required><br>
+        Data de Nascimento: <input type="date" name="data_nasc" required><br>
+        Gênero: 
+        <select name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br>
+        Tel/Cel: <input type="tel" name="telefone"><br>
+        Email: <input type="email" name="email" required><br>
+
+        <h2>Endereço</h2>
+        Logradouro: <input type="text" name="logradouro"><br>
+        Nº: <input type="text" name="numero"><br>
+        Bairro: <input type="text" name="bairro"><br>
+        Cidade: <input type="text" name="cidade"><br>
+        UF: <input type="text" name="uf"><br>
+
+        <h2>Habilitação</h2>
+        <input type="radio" name="habilitacao[]" value="A"> A
+        <input type="radio" name="habilitacao[]" value="B"> B
+        <input type="radio" name="habilitacao[]" value="C"> C
+        <input type="radio" name="habilitacao[]" value="A/B"> A/B
+        <input type="radio" name="habilitacao[]" value="A/C"> A/C
+        <br>
+
+        <h2>Habilidades</h2>
+        <input type="checkbox" name="habilidades[]" value="HTML"> HTML
+        <input type="checkbox" name="habilidades[]" value="CSS"> CSS
+        <input type="checkbox" name="habilidades[]" value="JS"> JS
+        <input type="checkbox" name="habilidades[]" value="PHP"> PHP
+        <br>
+        <input type="checkbox" name="habilidades[]" value="MySQL"> MySQL
+        <input type="checkbox" name="habilidades[]" value="React"> React
+        <input type="checkbox" name="habilidades[]" value="Design"> Design
+        <input type="checkbox" name="habilidades[]" value="Redes"> Redes
+        <br>
+
+        <h2>Competências</h2>
+        <input type="checkbox" name="competencias[]" value="Paciencia"> Paciência
+        <input type="checkbox" name="competencias[]" value="Pontualidade"> Pontualidade
+        <input type="checkbox" name="competencias[]" value="Organizacao"> Organização
+        <br>
+        <input type="checkbox" name="competencias[]" value="Proatividade"> Próatividade
+        <input type="checkbox" name="competencias[]" value="Lideranca"> Liderança
+        <input type="checkbox" name="competencias[]" value="Trabalho em Equipe"> Trabalho em Equipe
+        <br>
+
+        <h2>Experiências</h2>
+        1)<br>
+        Cargo/Função: <input type="text" name="cargo1"><br>
+        Data de Início: <input type="date" name="inicio1"><br>
+        Data de Término: <input type="date" name="termino1"><br>
+        Local de Trabalho: <input type="text" name="local1"><br>
+        Descrição das Atividades: <textarea name="descricao1" rows="4" cols="50"></textarea><br>
+        2)<br>
+        Cargo/Função: <input type="text" name="cargo2"><br>
+        Data de Início: <input type="date" name="inicio2"><br>
+        Data de Término: <input type="date" name="termino2"><br>
+        Local de Trabalho: <input type="text" name="local2"><br>
+        Descrição das Atividades: <textarea name="descricao2" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

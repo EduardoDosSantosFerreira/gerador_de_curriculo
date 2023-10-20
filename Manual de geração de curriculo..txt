@@ -1,0 +1,1 @@
+Baixe a pasta root e substitua pela atual do usbwebserver, abra o arquivo formulario.html preencha as informações, caso alguma informação estiver incompleta não conseguirá processeguir. Ao terminar de preencher as informações do formulario e enviar as informações, o arquivo php coletará as informações e apartir disso gerar um curriculo para o usuário.
